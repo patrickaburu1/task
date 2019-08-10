@@ -55,7 +55,7 @@ CREATE TABLE `choices` (
   `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKnm6kidtw8xyfpshsd6ggt4frw` (`menu_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `choices` (
 
 LOCK TABLES `choices` WRITE;
 /*!40000 ALTER TABLE `choices` DISABLE KEYS */;
-INSERT INTO `choices` VALUES (1,1,'Santa'),(2,1,'Asian'),(3,3,'MineStrone');
+INSERT INTO `choices` VALUES (1,1,'Santa'),(2,1,'Asian'),(3,3,'MineStrone'),(4,1,'Greek'),(5,3,'Hot and sour'),(6,3,'Miso');
 /*!40000 ALTER TABLE `choices` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +113,7 @@ CREATE TABLE `menu_choices` (
 
 LOCK TABLES `menu_choices` WRITE;
 /*!40000 ALTER TABLE `menu_choices` DISABLE KEYS */;
-INSERT INTO `menu_choices` VALUES (1,1),(1,2),(2,3);
+INSERT INTO `menu_choices` VALUES (1,1),(1,2),(3,3),(1,4),(3,5),(3,6);
 /*!40000 ALTER TABLE `menu_choices` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -126,4 +126,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-08-10 12:28:16
+-- Dump completed on 2019-08-10 12:49:57
